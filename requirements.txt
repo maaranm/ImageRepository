@@ -1,0 +1,39 @@
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\Shopify2021Project\asgi.py: 12
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\Shopify2021Project\urls.py: 17,18,19
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\Shopify2021Project\wsgi.py: 12
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\manage.py: 11
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\admin.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\apps.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 13,14
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\forms.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0001_initial.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0002_auto_20210106_1725.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0003_auto_20210106_1726.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0004_annotatedimage.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0005_auto_20210112_2242.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\migrations\0006_auto_20210112_2255.py: 3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\models.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\templatetags\picture_tags.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\tests.py: 1
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\urls.py: 1,2,3
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\views.py: 3,4,5,10,11
+Django == 3.1.5
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 8,9,10,11,12
+Pillow == 7.2.0
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 3
+matplotlib == 3.3.2
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 7
+numpy == 1.19.5
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 5,6
+six == 1.15.0
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 1
+tensorflow_gpu == 2.4.0
+
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 2
+# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\views.py: 9
+tensorflow_hub == 0.11.0
