@@ -6,7 +6,6 @@ from django.templatetags.static import static
 from .forms import image_form
 from .forms import search_form
 from .models import annotated_image
-import tensorflow_hub as hub
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.http import HttpResponseRedirect
 import threading

@@ -35,5 +35,4 @@ six == 1.15.0
 tensorflow_gpu == 2.4.0
 
 # C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\features\object_detector.py: 2
-# C:\Users\Maaran\Documents\Shopify2021Project\Shopify2021Project\pictures\views.py: 9
 tensorflow_hub == 0.11.0
