@@ -11,7 +11,7 @@
 
 - [Quick start](#quick-start)
 - [Features](#features)
-- [Screenshots] (#screenshots)
+- [Screenshots](#screenshots)
 
 ## Quick start
 This guide assumes that you already have Python 3.6.x installed
