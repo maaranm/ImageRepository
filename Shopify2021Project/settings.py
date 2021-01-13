@@ -131,3 +131,6 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 print(MEDIA_ROOT)
 MEDIA_URL = '/media/'
+
+#Tensorflow detector url
+TENSORFLOW_MODULE_URL = "https://tfhub.dev/google/faster_rcnn/openimages_v4/inception_resnet_v2/1"

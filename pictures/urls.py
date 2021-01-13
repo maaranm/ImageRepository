@@ -4,9 +4,9 @@ from django.conf.urls.static import static
 
 from . import views
 
+#these urls are accesible at localhost:8000/pictures/
 urlpatterns = [
     path('viewall', views.view_all, name='view_all'),
-    path('upload/', views.image_upload_view, name='test'),
-    path('view_object', views.image_with_object_view, name='view_object'),
+    path('', views.image_upload_view, name='test'),
     path('search_object', views.object_input, name='object_input')
 ]

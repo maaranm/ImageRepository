@@ -1,4 +1,17 @@
-<form method="POST" action="{% url 'viewall' %}">{% csrf_token %}
-        <input type="text" name="username">
-        <input type="submit" name="submit">
-</form>
+{% extends 'pictures/base.html' %}
+
+{% block body %}
+	<form action="/pictures/search_object" method="post">
+	    {% csrf_token %}
+	    {{ form }}
+	    <input type="submit" value="Submit">
+	</form>
+{% endblock body %}
+
+{% block header %}
+    <div class="topnav">
+        <a href="/pictures/">Upload</a>
+        <a href="/pictures/viewall">View</a>
+        <a class="active" href="/pictures/search_object">Search for Object</a>
+    </div>
+{% endblock header %}

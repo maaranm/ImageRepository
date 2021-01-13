@@ -1,34 +1,51 @@
 {% extends 'pictures/base.html' %}
 
+{% load static %}
 {% load picture_tags %}
 
-{% block body %}
-	{% if images %}
-		{% for image in images %}
-			{% with image|split:'.' as strs %}
-				{% with strs|length as str_arr_len %}
-					{% with str_arr_len|add:'-1' as ext_idx %}
-						{% if strs|get_by_index:ext_idx == 'jpg' %}
-							<a href="/media/images/{{ image }}">
-								<img src="/media/images/{{ image }}" alt="{{ image }}">
-							</a>
-						{% endif %}
-					{% endwith %}
-				{% endwith %}
-			{% endwith %}
-			{% if forloop.counter|divisibleby:4 %}
-				<div class="clear"></div>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		<p>No image available.</p>
-	{% endif %}
-{% endblock body %}
 
-{% block extra_js %}
+{% block body %}
+	<link rel="stylesheet" href="{% static 'pictures/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'pictures/css/simplelightbox.min.css' %}">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'pictures/js/simple-lightbox.min.js' %}"></script>
+    <div class='container'>
+	    <div class="gallery">
+			{% if images %}
+				{% for image in images %}
+					{% with image|split:'.' as strs %}
+						{% with strs|length as str_arr_len %}
+							{% with str_arr_len|add:'-1' as ext_idx %}
+								{% if strs|get_by_index:ext_idx == 'jpg' %}
+									<a href="/media/images/{{ image }}">
+										<img src="/media/images/{{ image }}" alt="{{ image }}">
+									</a>
+								{% endif %}
+							{% endwith %}
+						{% endwith %}
+					{% endwith %}
+					{% if forloop.counter|divisibleby:4 %}
+						<div class="clear"></div>
+					{% endif %}
+				{% endfor %}
+			{% else %}
+				<p>No image available.</p>
+			{% endif %}
+	    </div>
+	</div>
 	<script type='text/javascript'>
 		$(document).ready(function() {
 			$('.gallery a').simpleLightbox();
 		});
 	</script>
-{% endblock extra_js %}
+{% endblock body %}
+
+{% block header %}
+    <div class="topnav">
+        <a href="/pictures/">Upload</a>
+        <a class="active" href="/pictures/viewall">View</a>
+        <a href="/pictures/search_object">Search for Object</a>
+    </div>
+{% endblock header %}

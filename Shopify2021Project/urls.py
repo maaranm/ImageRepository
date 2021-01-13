@@ -18,6 +18,8 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+#static addition is to allow media files to be accesible
+#including pictures.urls allows all urls in the pictures app to be accesible
 urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + [
 	path('pictures/', include('pictures.urls')),
     path('admin/', admin.site.urls),
