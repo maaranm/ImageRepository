@@ -24,6 +24,8 @@ This guide assumes that you already have Python 3.6.x installed
 7. In a web browser navigate to localhost:8000/pictures
 8. The default page allows you to upload images, clicking View All shows all uploaded images and Search for Object allows you to find images containing an object
 
+Please note that the uploaded images are processed in the background to extract features. This may take anywhere from 30 seconds to several minutes depending on the computer hardware. Testing was done using a Nvidia GTX 1080.
+
 ## Features
 ### Current
 * Upload images with names
