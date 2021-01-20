@@ -30,7 +30,7 @@ Please note that the uploaded images are processed in the background to extract 
 ### Current
 * Upload images with names
 * View all uploaded images
-* Search images for objects inside them
+* Uses TensorFlow trained model to extract objects found in uploaded images to allow users to search for objects and display images with specified object in view
 ### Upcoming
 * Label and search by people (eg. find images with Maaran)
 * Search by upload name
