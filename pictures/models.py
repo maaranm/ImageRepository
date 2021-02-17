@@ -6,7 +6,7 @@ class image(models.Model):
 	image = models.ImageField(upload_to='images')
 	#overriten to provide useful information if needed
 	def __str__(self):
-		return self.caption
+		return self.image_name
 
 #model used to store uploaded data and extracted data
 class annotated_image(models.Model):
